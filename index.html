@@ -526,5 +526,174 @@
         <a href="https://github.com/Nekoguard" target="_blank">Nekoguard</a>
       </div>
     </div>
+
+    <div class="booking-tickets">
+      <form class="booking-tickets__form" action="/" method="post" novalidate>
+        <div class="booking-tickets__choose">
+          <div class="choose__content">
+            <div class="choose__logo">
+              <img src="svg/logo.svg" alt="logo">
+            </div>
+            <h2 class="choose__title ">Booking tickets</h2>
+            <span>Tour to Louvre</span>
+          </div>
+
+          <div class="choose__group">
+            <div class="choose__date">
+              <div class="date-input input-box">
+                <div class="icon">
+                  <img src="svg/date.svg" alt="date-icon">
+                </div>
+                <input class="input" name="date" type="text" placeholder="Date" onfocus="(this.type='date')">
+              </div>
+
+              <div class="time-input input-box">
+                <div class="icon">
+                  <img src="svg/time.svg" alt="time-icon">
+                </div>
+                <input class="input" name="time" type="text" placeholder="Time" onfocus="(this.type='time')">
+              </div>
+            </div>
+
+
+            <div class="name-input input-box">
+              <div class="icon">
+                <img src="svg/name.svg" alt="name-icon">
+              </div>
+              <input class="input" name="name" type="text" required placeholder="Name" id="name" minlength="3" maxlength="15" pattern="^(?=.{3,15}$)[a-zA-Z]*(?: [a-zA-Z]+)*|(?=.{3,15}$)[а-яА-Я]*(?: [а-яА-Я]+)*$">
+              <div class="message name-message"></div>
+            </div>
+
+            <div class="email-input input-box">
+              <div class="icon">
+                <img src="svg/email.svg" alt="email-icon">
+              </div>
+              <input class="input" name="email" type="email" required placeholder="E-mail" id="email" pattern="^[a-zA-Z0-9_\-]{3,15}@([a-zA-z]{4,30}.)[a-zA-Z]{2,10}$">
+              <div class="message email-message"></div>
+            </div>
+
+            <div class="phone-input input-box">
+              <div class="icon">
+                <img src="svg/tel.svg" alt="phone-icon">
+              </div>
+              <input class="input" name="phone" type="tel" required placeholder="Phone" id="phone" pattern="^[0-9]{1,10}|([0-9]{2}[-]){1,4}[0-9]{2}|([0-9]{2}[ ]){1,4}[0-9]{2}|([0-9]{3}[-]){1,2}[0-9]{3}|([0-9]{3}[ ]){1,2}[0-9]{3}$">
+              <div class="message phone-message"></div>
+            </div>
+
+            <div class="select-input input-box">
+              <div class="icon">
+                <img src="svg/ballot.svg" alt="ballot-icon">
+              </div>
+              <select class="input" name="type">
+                <option value="type" disabled selected>Ticket Type</option>
+                <option value="basic">Basic</option>
+                <option value="senior">Senior</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="choose__type">
+            <div class="text">Entry ticket</div>
+
+            <div class="choose__type-basic">
+              <span>Basic 18+ (20 €)</span>
+
+              <div class="form-amount__button">
+                <button class="button" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                <input class="number" type="number" min="0" max="20" value="0" readonly style="width: 35px">
+                <button class="button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              </div>
+            </div>
+
+            <div class="choose__type-senior">
+              <span>Senior 65+ (10 €)</span>
+
+              <div class="form-amount__button">
+                <button class="button" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                <input class="number" type="number" min="0" max="20" value="0" readonly style="width: 35px">
+                <button class="button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-tickets__payment">
+          <div class="overview">
+            <div class="overview__content">
+              <h3>Overview</h3>
+
+              <span>Tour to Louvre</span>
+
+              <ul>
+                <li><img src="svg/date.svg" alt="">Friday, August 19</li>
+                <li><img src="svg/time.svg" alt="">16 : 30</li>
+                <li><img src="svg/check_circle_outline.svg" alt="">Temporary exhibition</li>
+              </ul>
+            </div>
+
+            <img src="img/overview.jpg" alt="louvre" class="img">
+          </div>
+
+          <div class="price">
+            <div class="each-price">
+              <div class="basic">
+                <div class=""><div class="count basic-count">0</div>Basic (20 €)</div>
+                <span class="sum">40 €</span>
+              </div>
+
+              <div class="senior">
+                <div><div class="count senior-count">0</div>Senior (10 €)</div>
+                <span class="sum">20 €</span>
+              </div>
+            </div>
+
+            <div class="card-total">
+              <span>Total:</span>
+              <span class="sum">60 €</span>
+            </div>
+          </div>
+
+          <div class="credit-card">
+            <div class="credit-card-side card__front">
+              <div class="card-number">
+                <span class="field-text">Card number</span>
+                <input type="text" name="card-number">
+              </div>
+
+              <div class="card-date">
+                <span class="field-text">Expiration date</span>
+
+                <div class="card-date__group">
+                  <input type="number" name="card-date-day" min="1" max="31">
+                  <input type="number" name="card-date-year" min="2021" max="2100">
+                </div>
+              </div>
+
+              <div class="card-name">
+                <span class="field-text">Cardholder name</span>
+                <input type="text" name="cardholder-name">
+              </div>
+
+              <img src="svg/brand.svg" alt="" class="card-brand">
+            </div>
+
+            <div class="credit-card-side card__back">
+              <div class="line"></div>
+              <div class="back-content">
+                <span class="cvv">CVC/CVV</span>
+                <input type="text" name="cvv">
+                <span class="text">The last 3 or 4 digits on back of the card</span>
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" name="submit" value="Book" class="submit" id="submit">
+        </div>
+
+        <div class="close">
+          <img src="svg/close.svg" alt="close" class="close">
+        </div>
+      </form>
+    </div>
   </body>
 </html>
