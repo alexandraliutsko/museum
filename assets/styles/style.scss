@@ -876,3 +876,46 @@ body {
   background-attachment: fixed;
   background-position: center center;
 }
+
+// Contacts section
+
+.contacts__title {
+  margin: 0 0 100px 0;
+  position: relative;
+}
+
+.contacts__content {
+  margin: 110px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.contacts__subtitle span {
+  display: block;
+}
+
+.contacts__list {
+  margin: 50px 0 0 0;
+}
+
+.contacts__item {
+  margin: 0 0 25px 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.map {
+  width: 960px;
+  height: 620px;
+}
