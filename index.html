@@ -12,52 +12,106 @@
     <title>Museum</title>
   </head>
   <body>
-  <header class="header">
-    <div class="container header__container">
-      <a class="logo" href="#">
-        <div class="logo__icon">
-          <img class="logo__icon-img" src="svg/logo.svg" alt="logo">
-        </div>
-        <span class="logo__text">
-          Louvre
-        </span>
-      </a>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="#">
+          <div class="logo__icon">
+            <img class="logo__icon-img" src="svg/logo.svg" alt="logo">
+          </div>
+          <span class="logo__text">
+            Louvre
+          </span>
+        </a>
 
-      <nav class="nav header__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#visiting" class="nav__link">
-              Visiting
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#visiting" class="nav__link">
+                Visiting
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#explore" class="nav__link">
+                Explore
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#video" class="nav__link">
+                Video
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">
+                Gallery
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#tickets" class="nav__link">
+                Tickets
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section dark-section welcome-section">
+        <div class="container welcome-container">
+          <div class="welcome__content">
+            <h1 class="section__title dark-title welcome__title">
+              Welcome
+              <span>
+              to the Louvre
+            </span>
+            </h1>
+            <p class="welcome__text">
+              From the castle to the museum
+            </p>
+            <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" class="welcome__btn" target="_blank">
+              Discover the Louvre
             </a>
-          </li>
-          <li class="nav__item">
-            <a href="#explore" class="nav__link">
-              Explore
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#video" class="nav__link">
-              Video
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#gallery" class="nav__link">
-              Gallery
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#tickets" class="nav__link">
-              Tickets
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#contacts" class="nav__link">
-              Contacts
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+          </div>
+
+          <div class="welcome__slider-wrapper">
+            <div class="welcome__slider">
+              <div class="welcome__slider-item">
+                <div class="shadow"></div>
+                <img src="img/welcome-slider/1.jpg" alt="slider-item" class="welcome__slider-img">
+              </div>
+              <div class="welcome__slider-item">
+                <div class="shadow"></div>
+                <img src="img/welcome-slider/2.jpg" alt="slider-item" class="welcome__slider-img">
+              </div>
+              <div class="welcome__slider-item">
+                <div class="shadow"></div>
+                <img src="img/welcome-slider/3.jpg" alt="slider-item" class="welcome__slider-img">
+              </div>
+              <div class="welcome__slider-item">
+                <div class="shadow"></div>
+                <img src="img/welcome-slider/4.jpg" alt="slider-item" class="welcome__slider-img">
+              </div>
+              <div class="welcome__slider-item">
+                <div class="shadow"></div>
+                <img src="img/welcome-slider/5.jpg" alt="slider-item" class="welcome__slider-img">
+              </div>
+            </div>
+
+            <div class="welcome__slider-pagination">
+              <div class="welcome__slider-counter">
+                <span id="current-slide">01</span>  |  <span id="slides-count"></span>
+              </div>
+              <div class="welcome__slider-dots"></div>
+              <div class="welcome__slider-arrows"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
