@@ -865,3 +865,14 @@ body {
 .buy:hover {
   background-color: $font-gold;
 }
+
+// Parallax
+
+.parallax {
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/parallax.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
