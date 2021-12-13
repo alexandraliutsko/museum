@@ -376,3 +376,74 @@ body {
 .card:hover .card__title::after {
   width: 100%;
 }
+
+// Explore section
+
+.explore-section {
+  padding: 90px 0 75px 0;
+}
+
+.explore-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore__content {
+  max-width: 660px;
+  margin: -15px 60px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.explore__title {
+  margin: 0 0 70px 0;
+  position: relative;
+  color: #ffffff;
+}
+
+.explore__text {
+  margin: 30px 0 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.text-gold {
+  color: #caaa7d;
+}
+
+.explore__slider {
+  position: relative;
+  overflow: hidden;
+  width: 720px;
+  height: 700px;
+}
+
+.explore__slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.explore__slider-img.before {
+  width: calc(58% + 20px);
+  background: url("../img/explore-slider/before.jpg") no-repeat top left;
+}
+
+.explore__slider-img.after {
+  background: url("../img/explore-slider/after.jpg") no-repeat;
+}
+
+.compare {
+  margin: 0 20px 0 0;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  left: 58%;
+  z-index: 10;
+  cursor: grabbing;
+}
