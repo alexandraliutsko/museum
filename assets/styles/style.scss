@@ -89,3 +89,208 @@ body {
 .nav__link:active {
   color: $font-gold;
 }
+
+// Welcome section
+
+.section {
+  padding: 75px 0;
+  background-color: #ffffff;
+}
+
+.dark-section {
+  color: #ffffff;
+  background-color: $bg-dark;
+}
+
+.welcome-section {
+  padding: 0 0 60px;
+  min-height: 750px;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.welcome__content {
+  margin: 0 0 0 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+
+.section__title {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $font-gold;
+}
+
+.dark-title {
+  color: #FFFFFF;
+}
+
+.welcome__title {
+  max-width: 600px;
+  text-align: left;
+}
+
+.welcome__title span {
+  display: block;
+}
+
+.welcome__text {
+  margin: 25px 0 75px 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+
+.welcome__btn {
+  max-width: 365px;
+  padding: 25px 70px;
+
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+
+  border-radius: 10px;
+  background-color: $dark-red;
+  color: #ffffff;
+
+  transition: background-color .5s ease;
+}
+
+.welcome__btn:hover {
+  background-color: $font-gold;
+}
+
+.welcome__slider {
+  max-width: 1000px;
+}
+
+.welcome__slider-wrapper {
+}
+
+.welcome__slider-pagination {
+  padding: 40px 90px 40px 75px;
+  width: 620px;
+  max-width: 620px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  background-color: $bg-dark;
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+
+.welcome__slider-dots {
+  margin: -12px 60px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__slider-arrows {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__slider-item {
+  cursor: pointer;
+  position: relative;
+}
+
+.shadow {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.welcome__slider-pagination .slick-arrow {
+  width: 30px;
+  height: 8px;
+  font-size: 0;
+  cursor: pointer;
+  transition: filter .3s ease;
+}
+
+.welcome__slider-pagination .slick-arrow:hover {
+  filter: invert(55%) sepia(47%) saturate(270%) hue-rotate(356deg) brightness(100%) contrast(82%);
+}
+
+.welcome__slider-pagination .slick-prev {
+  background: url("../svg/left-arrow.svg") 0 0 / 100% no-repeat;
+  margin: 0 20px 0 0;
+}
+
+.welcome__slider-pagination .slick-next {
+  background: url("../svg/right-arrow.svg") 0 0 / 100% no-repeat;
+}
+
+.welcome__slider-pagination .slick-dots {
+  max-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome__slider-pagination .slick-dots button {
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin: 0 12px;
+  transition: background-color .3s ease;
+}
+
+.welcome__slider-pagination .slick-dots .slick-active button {
+  background-color: $dots-color;
+}
+
+.welcome__slider-pagination .slick-dots button:hover {
+  background-color: $font-gold;
+}
+
+.welcome__slider-counter {
+  margin: 0 50px 0 0;
+  justify-self: flex-start;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
