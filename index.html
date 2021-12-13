@@ -348,7 +348,73 @@
         </div>
       </section>
 
+      <section class="section tickets-section" id="tickets">
+        <div class="container">
+          <h2 class="section__title tickets__title underline__title">
+            Buy tickets
+          </h2>
 
+          <div class="tickets__inner">
+            <img src="img/tickets.jpg" alt="picture" class="tickets__img">
+
+            <div class="tickets__content">
+              <div class="type">
+                <h3 class="tickets__subtitle">
+                  Ticket Type
+                </h3>
+
+                <label class="label">
+                  Permanent exhibition
+                  <input class="radio permanent" type="radio" name="radio" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="label">
+                  Temporary exhibition
+                  <input class="radio temporary" type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="label">
+                  Combined Admission
+                  <input class="radio combined" type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="amount">
+                <h3 class="tickets__subtitle">
+                  Amount
+                </h3>
+
+                <div class="amount__group">
+                  <p class="amount__text">Basic 18+</p>
+
+                  <div class="amount__button">
+                    <button class="button" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                    <input class="number basic-count" type="number" min="0" max="20" value="0" readonly>
+                    <button class="button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                </div>
+
+                <div class="amount__group">
+                  <p class="amount__text">Senior 65+</p>
+
+                  <div class="amount__button">
+                    <button class="button" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                    <input class="number senior-count" type="number" min="0" max="20" value="0" readonly>
+                    <button class="button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                </div>
+
+                <p class="total">Total €<span id="tickets-total-sum">0</span></p>
+
+                <button class="buy">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
