@@ -1,6 +1,6 @@
 ## Adaptive site about the Louvre.
 
-[Tap here to test it!](https://nekoguard.github.io/museum/)
+[Tap here to test it!](https://alexandraliutsko.github.io/museum/)
 
 #### Here I used:
 - SCSS proprocessor
